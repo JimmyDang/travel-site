@@ -3,26 +3,34 @@
 	font-size: 2.55em;
 	font-weight: 300;
 	text-align: center;
+	padding-bottom: 3.5rem;
 	
 	@add-mixin atSmall{
 		font-size: 3.75rem;
+		padding: 0;
 	}
 	
 	strong{
 		font-weight: 500;
 		
 	}
+	&__blue{
+		color:$mainBlue;
+	}
 	
-	&__icon{
-		
+	&__icon{		
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: .6rem;
 		@add-mixin atSmall{
+			position: relative;
+			top: 8px;
 			margin-right: .5rem;
 			margin-left: 0;
+			margin-bottom: 0;
 			display: inline-block;
+			padding-right: 15px;
 		}
 	}
 }
