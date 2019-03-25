@@ -39,7 +39,7 @@
 	}
 	&__no-t-margin{
 		margin-top: .5rem;
-		padding-left: 1rem;
+		
 		@add-mixin atSmall{
 			padding-left: 0;
 		}
