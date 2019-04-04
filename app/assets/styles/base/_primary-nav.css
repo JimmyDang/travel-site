@@ -1,0 +1,52 @@
+.primary-nav{
+	
+	&__pull-right{
+		
+		@add-mixin atMedium{
+			float: right;
+		}
+	}
+	ul{
+		margin: 0;
+		padding: 0;
+		@mixin clearfix;
+		
+	}
+	li{
+		list-style: none;
+		display: inline-block;
+		padding-right: 7px;
+		@add-mixin atMedium{
+			float: left;
+			display: block;
+			padding-right: 20px;
+		}
+	}
+	li:last-child{
+		padding-right: 0;
+		@add-mixin atMedium{
+			padding-right: 20px
+		}
+		
+	}
+	a{
+		color: #FFF;
+		font-weight: 300;
+		display: block;
+		text-decoration: none;
+		margin: 4px 0 ;
+		
+		
+		padding: 5px 8px;
+		font-size: .9rem;
+		background-color: rgba(47, 85, 114, .4);
+		
+		@add-mixin atMedium{
+			font-size: 1rem;
+			padding: 12px 0;
+			background-color: transparent;
+			margin: 0;
+		}
+	}
+	
+}
