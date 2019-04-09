@@ -1084,8 +1084,12 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 800px){
 
 .site-header{
-		background-color: rgba(47, 85, 114, .3)
+		background-color: rgba(47, 85, 114, .3);
+		position: fixed
 }
+		.site-header__dark{
+			background-color: rgba(23, 51, 72, .85);
+		}
   }
 
 @media (min-width: 800px){
@@ -1104,6 +1108,12 @@ Instead edit gulp/templates/sprite */
 		    -ms-transform: translateX(-50%) scale(.9);
 		     -o-transform: translateX(-50%) scale(.9);
 		        transform: translateX(-50%) scale(.9);
+		-webkit-transition: -webkit-transform .3s ease-out;
+		transition: -webkit-transform .3s ease-out;
+		-o-transition: -o-transform .3s ease-out;
+		-moz-transition: transform .3s ease-out, -moz-transform .3s ease-out;
+		transition: transform .3s ease-out;
+		transition: transform .3s ease-out, -webkit-transform .3s ease-out, -moz-transform .3s ease-out, -o-transform .3s ease-out;
 		-webkit-transform-origin: 50% 0;
 		   -moz-transform-origin: 50% 0;
 		    -ms-transform-origin: 50% 0;
@@ -1111,7 +1121,7 @@ Instead edit gulp/templates/sprite */
 		        transform-origin: 50% 0;
 		background-color: #2f5572;
 		padding: 25px 36px;
-	}
+		}
 
 @media (min-width: 800px){
 
@@ -1122,7 +1132,14 @@ Instead edit gulp/templates/sprite */
 			    -ms-transform: translateX(0);
 			     -o-transform: translateX(0);
 			        transform: translateX(0)
-	}
+		}
+			.site-header__dark .site-header__logo {
+				-webkit-transform: scale(.54);
+				   -moz-transform: scale(.54);
+				    -ms-transform: scale(.54);
+				     -o-transform: scale(.54);
+				        transform: scale(.54);
+			}
   }
 
 .site-header__menu-icon{
@@ -1132,7 +1149,7 @@ Instead edit gulp/templates/sprite */
 		z-index: 10;
 		top: 10px;
 		right: 10px;
-		
+
 	}
 
 .site-header__menu-icon::before{
@@ -1154,7 +1171,7 @@ Instead edit gulp/templates/sprite */
 			-moz-transition: transform .3s ease-out, -moz-transform .3s ease-out;
 			transition: transform .3s ease-out;
 			transition: transform .3s ease-out, -webkit-transform .3s ease-out, -moz-transform .3s ease-out, -o-transform .3s ease-out;
-			
+
 		}
 
 .site-header__menu-icon__middle{
@@ -1173,7 +1190,7 @@ Instead edit gulp/templates/sprite */
 			-o-transition: all .3s ease-out;
 			-moz-transition: all .3s ease-out;
 			transition: all .3s ease-out;
-			
+
 		}
 
 .site-header__menu-icon::after{
@@ -1195,14 +1212,14 @@ Instead edit gulp/templates/sprite */
 			-moz-transition: transform .5s ease-out, -moz-transform .5s ease-out;
 			transition: transform .5s ease-out;
 			transition: transform .5s ease-out, -webkit-transform .5s ease-out, -moz-transform .5s ease-out, -o-transform .5s ease-out;
-			
+
 		}
 
 @media (min-width: 800px){
 
 .site-header__menu-icon{
 			display: none
-		
+
 	}
   }
 
@@ -1265,7 +1282,7 @@ Instead edit gulp/templates/sprite */
   }
 
 .site-header__menu-content--is-visible{
-		
+
 		opacity: 1;
 		z-index: 1;
 		-webkit-transform: scale(1);
@@ -1273,7 +1290,7 @@ Instead edit gulp/templates/sprite */
 		    -ms-transform: scale(1);
 		     -o-transform: scale(1);
 		        transform: scale(1);
-		
+
 		}
 
 @media (min-width: 800px){
@@ -1286,7 +1303,7 @@ Instead edit gulp/templates/sprite */
 .primary-nav ul{
 		margin: 0;
 		padding: 0;
-		
+
 	}
 
 .primary-nav ul::after{
@@ -1312,14 +1329,14 @@ Instead edit gulp/templates/sprite */
 
 .primary-nav li:last-child{
 		padding-right: 0;
-		
+
 	}
 
 @media (min-width: 800px){
 
 .primary-nav li:last-child{
 			padding-right: 20px
-		
+
 	}
   }
 
@@ -1329,8 +1346,8 @@ Instead edit gulp/templates/sprite */
 		display: block;
 		text-decoration: none;
 		margin: 4px 0 ;
-		
-		
+
+
 		padding: 5px 8px;
 		font-size: .9rem;
 		background-color: rgba(47, 85, 114, .4);
@@ -1344,6 +1361,9 @@ Instead edit gulp/templates/sprite */
 			background-color: transparent;
 			margin: 0
 	}
+		.primary-nav a.is-current-link{
+			color: #fabb69;
+		}
   }
 
 .reveal-item {
