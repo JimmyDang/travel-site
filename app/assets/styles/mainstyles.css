@@ -20,3 +20,5 @@
 @import "base/_site-header";
 @import "base/_primary-nav";
 @import "base/_reveal-items";
+@import "base/_modal";
+@import "base/_social-icon";

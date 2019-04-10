@@ -1,0 +1,18 @@
+.social-icons {
+  text-align: center;
+
+  &__icon {
+    background-color: $mainOrange;
+    display: inline-block;
+    margin: 0 8px 8px 8px;
+    width: 30%;
+    height: 60px;
+    position: relative;
+
+
+    @add-mixin atSmall {
+      width: 60px;
+      margin: 0 10px;
+    }
+  }
+}

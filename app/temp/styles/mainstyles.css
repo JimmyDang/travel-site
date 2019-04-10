@@ -844,14 +844,19 @@ a{
 
 .section-title strong{
 		font-weight: 500;
-		
+
 	}
 
 .section-title__blue{
 		color:#2f5572;
 	}
 
-.section-title__icon{		
+.section-title__less-margin{
+		margin-bottom: 1.3rem;
+		margin-top: 0;
+	}
+
+.section-title__icon{
 		display: inline-block;
 		margin-left: auto;
 		margin-right: auto;
@@ -1386,4 +1391,98 @@ Instead edit gulp/templates/sprite */
         -ms-transform: scale(1);
          -o-transform: scale(1);
             transform: scale(1);
+  }
+
+.modal{
+  position: fixed;
+  z-index: 5;
+  background-color:  rgba(255, 255, 255, .90);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.2);
+     -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+       -o-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+
+}
+
+.modal--is-visible{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+       -moz-transform: scale(1);
+        -ms-transform: scale(1);
+         -o-transform: scale(1);
+            transform: scale(1);
+  }
+
+.modal__inner{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+.modal__description{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.65;
+  }
+
+.modal__close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size:  2rem;
+    -webkit-transform: scaleX(1.2);
+       -moz-transform: scaleX(1.2);
+        -ms-transform: scaleX(1.2);
+         -o-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+    -webkit-transform-origin: 100% 0;
+       -moz-transform-origin: 100% 0;
+        -ms-transform-origin: 100% 0;
+         -o-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    color: #2f5572;
+    cursor: pointer;
+  }
+
+.modal__close:hover{
+      color: #d59541;
+    }
+
+.social-icons {
+  text-align: center;
+}
+
+.social-icons__icon {
+    background-color: #d59541;
+    display: inline-block;
+    margin: 0 8px 8px 8px;
+    width: 30%;
+    height: 60px;
+    position: relative;
+  }
+
+@media (min-width: 530px){
+
+.social-icons__icon {
+      width: 60px;
+      margin: 0 10px
+  }
   }

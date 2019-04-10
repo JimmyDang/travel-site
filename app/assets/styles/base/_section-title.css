@@ -4,21 +4,25 @@
 	font-weight: 300;
 	text-align: center;
 	padding-bottom: 3.5rem;
-	
+
 	@add-mixin atSmall{
 		font-size: 3.75rem;
 		padding: 0;
 	}
-	
+
 	strong{
 		font-weight: 500;
-		
+
 	}
 	&__blue{
 		color:$mainBlue;
 	}
-	
-	&__icon{		
+	&__less-margin{
+		margin-bottom: 1.3rem;
+		margin-top: 0;
+	}
+
+	&__icon{
 		display: inline-block;
 		margin-left: auto;
 		margin-right: auto;
