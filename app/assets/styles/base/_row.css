@@ -1,12 +1,12 @@
 /* CSS Document */
 
-.row{	
-	
+.row{
+
 	@add-mixin clearfix;
 	&__t-padding{
 		padding-top: 80px;
 	}
-	
+
 	&__gutters{
 		margin-right: -65px;
 	}
@@ -29,19 +29,19 @@
 		padding-right: 45px;
 		box-sizing: border-box;
 	}
-		
-	
+
+
 	@add-mixin atMedium{
-		
+
 		&__b-margin-until-medium{
 		margin-bottom: 1rem;
-		
-		}	
+
+		}
 		&__medium-4{
 		float: left;
 		width:33.33%;
 		}
-		
+
 		&__medium-4--larger{
 			width: 37%;
 		}
@@ -53,24 +53,24 @@
 		float: left;
 		width: 66.66%;
 		}
-		
+
 		&__medium-8--smaller{
 			width: 63%;
 		}
-		
+
 	}
-	
-	@add-mixin atLarge{	
-			
+
+	@add-mixin atLarge{
+
 		&__b-margin-until-large{
 		margin-bottom: 1rem;
-		
-		}	
+
+		}
 		&__large-4{
 		float: left;
 		width:33.33%;
 		}
-		
+
 		&__large-4--larger{
 			width: 37%;
 		}
@@ -82,14 +82,14 @@
 		float: left;
 		width: 66.66%;
 		}
-		
+
 		&__large-8--smaller{
 			width: 63%;
 		}
-		
+
 	}
 	/*Begin Equal hight Rules*/
-	&__equal-height-at-medium{
+	.flexbox &__equal-height-at-medium{
 		@add-mixin atMedium{
 			display: flex;
 		}
@@ -98,8 +98,8 @@
 			display: flex;
 		}
 	}
-	
-	&__equal-height-at-large{
+
+	.flexbox &__equal-height-at-large{
 		@add-mixin atLarge{
 			display: flex;
 		}
@@ -109,4 +109,3 @@
 		}
 	}
 }
-
