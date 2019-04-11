@@ -1,39 +1,40 @@
 /* CSS Document */
 
 .page-section{
-	
+
 	@add-mixin atMedium{
 		padding: 4.5rem 0;
-		
+
 	}
 	&__no-b-padding-until-medium{
 		padding-bottom: 0;
-		
+
 		@add-mixin atLarge{
 			padding-bottom:4.5rem;
 		}
 	}
 	&__no-b-padding-until-large{
 		padding-bottom: 0;
-		
+
 		@add-mixin atLarge{
 			padding-bottom:4.5rem;
 		}
 	}
-	
-		
+
+
 	&--blue{
 		background-color: $mainBlue;
 		color: #FFF;
 		padding: 1rem;
-		
+
 	}
 	&__testimonials{
 		background-color: #e0e6ef;
 		@add-mixin atLarge{
-			background:url('/assets//images/testimonials-bg.jpg') top center no-repeat;
-		backgound-size: cover;
+			&.lazyloaded{
+				background:url('/assets//images/testimonials-bg.jpg') top center no-repeat;
+				backgound-size: cover;
+			}
 		}
-		
 	}
 }
