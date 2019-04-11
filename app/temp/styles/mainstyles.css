@@ -566,21 +566,18 @@ a{
 		background-color: #2f5572;
 		color: #FFF;
 		padding: 1rem;
-		
+
 	}
 
 .page-section__testimonials{
 		background-color: #e0e6ef;
-		
 	}
 
 @media (min-width: 1010px){
-
-.page-section__testimonials{
-			background:url('/assets//images/testimonials-bg.jpg') top center no-repeat;
-		backgound-size: cover
-		
-	}
+			.page-section__testimonials.lazyloaded{
+				background:url('/assets//images/testimonials-bg.jpg') top center no-repeat;
+				backgound-size: cover;
+			}
   }
 
 /* CSS Document */
